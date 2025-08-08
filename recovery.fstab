@@ -1,0 +1,18 @@
+# mount point       fstype    device                                                                flags
+/system             ext4      system                                                                flags=display="System";backup=1;logical;
+/system_image       emmc      system                                                                flags=display="System image";backup=1;flashimg=1;logical;
+/system_dlkm        ext4      system_dlkm                                                           flags=display="System_dlkm";logical;
+/system_ext         ext4      system_ext                                                            flags=display="System_ext";backup=1;logical;
+/system_ext_image   emmc      system_ext                                                            flags=display="System_ext image";backup=1;flashimg=1;logical;
+/product            ext4      product                                                               flags=display="Product";backup=1;logical;
+/product_image      emmc      product                                                               flags=display="Product image";backup=1;flashimg=1;logical;
+/vendor             ext4      vendor                                                                flags=display="Vendor";backup=1;logical;
+/vendor_image       emmc      vendor                                                                flags=display="Vendor image";backup=1;flashimg=1;logical;
+/vendor_dlkm        ext4      vendor_dlkm                                                           flags=display="Vendor_dlkm";logical;
+/boot               emmc      /dev/block/platform/14700000.ufs/by-name/boot                         flags=display="Boot";backup=1;flashimg=1;
+/init_boot          emmc      /dev/block/platform/14700000.ufs/by-name/init_boot                    flags=display="Init_boot";
+/misc               emmc      /dev/block/platform/14700000.ufs/by-name/misc                         flags=display="Misc";backup=1;flashimg=1;
+/metadata           f2fs      /dev/block/platform/14700000.ufs/by-name/metadata                     flags=display="Metadata";
+/data               f2fs      /dev/block/platform/14700000.ufs/by-name/userdata                     flags=display="Data";
+/vbmeta             emmc      /dev/block/platform/14700000.ufs/by-name/vbmeta                       flags=display="Vbmeta";
+/11210000.usb*      auto      vfat                                                                  flags=display="11210000.usb*";logical;
